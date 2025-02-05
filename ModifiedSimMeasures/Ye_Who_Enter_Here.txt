@@ -1,0 +1,10 @@
+This directory contains the implementation of a combined similarity measure consisting of
+    - the continuous Frechet distance
+    - the Hausdorff distance
+    - DTW distance
+
+Since this combined similarity measure was an experimental idea which I pursued in my thesis,
+most of this code will be undocumented. Should there be a poor soul which is actually interested
+in this area, then do not be afraid to contact me.
+
+Abandon all hope, ye who enter here.
