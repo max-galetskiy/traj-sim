@@ -26,7 +26,7 @@ Here, an abstract trajectory model and classes for specific types of trajectory 
 Here, functions for similarity measure computation and decision problem solving (i.e. checking whether Measure(T1,T2) <= Epsilon) are provided. For each measure, care was taken in implementing the most efficient computation algorithms found in current literature. In particular, the following measures are provided: Fréchet, discrete Fréchet, Hausdorff, DTW, LCSS, EDR, ERP.
 
 ### DataLoading
-Basic loading of either Euclidean or Road Network trajectories from a .csv file (examples for input data can be seen in the `/Datasets` directory.
+Basic loading of either Euclidean or Road Network trajectories from a .csv file (examples for input data can be seen in the `/Datasets` directory).
 
 ### DistCache
 Container to cache point-wise distances of a pair of trajectories. This is useful if multiple similarity measures are to be computed on the same pair of trajectories (especially for the case of Road Network trajectories).
