@@ -17,9 +17,30 @@ Additionally, this project also uses [this implementation of the Pruned Highway 
 To use, this project must be built from source. Both CMake and a C++ compiler supporting the C++17 standard are required. If these requirements are statisfied, then the `CMakeList.txt` file handles the building of the project. 
 
 ## Modules and Capabilities
+The following capabilities are provided in the project under these directories: 
 
+### TrajModels
+Here, an abstract trajectory model and classes for specific types of trajectory points (i.e. Euclidean and Road Network points) are provided. Additionally, functions computing the Free Space datastructure used in the classic Alt et Godau algorithm for the Fréchet distance are found here.
+
+### SimMeasures
+Here, functions for similarity measure computation and decision problem solving (i.e. checking whether Measure(T1,T2) <= Epsilon) are provided. For each measure, care was taken in implementing the most efficient computation algorithms found in current literature. In particular, the following measures are provided: Fréchet, discrete Fréchet, Hausdorff, DTW, LCSS, EDR, ERP.
+
+### DataLoading
+Basic loading of either Euclidean or Road Network trajectories from a .csv file (examples for input data can be seen in the `/Datasets` directory.
+
+### DistCache
+Container to cache point-wise distances of a pair of trajectories. This is useful if multiple similarity measures are to be computed on the same pair of trajectories (especially for the case of Road Network trajectories).
+
+### Experiments
+Abstract classes support the evaluation/benchmarking of similarity measures on a larger dataset. Additionally, the experimental setup from the evaluation of my Bachelor's thesis can be found here.
 
 ## Pointers to Literature
-
+Since this I am publishing this repo to assist people who are working or wanting to work with trajectory similarity measures, I also felt inclined to include this essential list of publications that revolves around the classic similarity measures:
+* 
+* 
+*
 
 ## Authors and Acknowledgement
+This project was written in its entirety by Max Galetskiy with the exception of the functions provided by Boost, GEOS or the PHL implementation as explained in the "Dependencies" section of this documentation.
+
+The Bachelor's thesis from which this project originated from, was supervised by (Theodoros Chondrogiannis)[https://dbis.uni-konstanz.de/people/people/researchers/chondrogiannis/] and (Johann Bornholdt)[https://dbis.uni-konstanz.de/people/people/researchers/bornholdt/] of the (Database and Information Systems group)[https://dbis.uni-konstanz.de/] under (Michael Grossniklaus)[https://dbis.uni-konstanz.de/people/people/grossniklaus/]).
