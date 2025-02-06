@@ -8,6 +8,7 @@ This project implements the computation of classic similarity measures (i.e. Fr√
 This code depends on the following C/C++ libraries:
 * [GEOS](https://libgeos.org/)
 * [Boost](https://www.boost.org/)
+
 Regarding the installation of those, please refer to the according documentation. For a setup on Windows, the [vcpkg package manager](https://vcpkg.io/en/) is highly recommended.
 
 Additionally, this project also uses [this implementation of the Pruned Highway Labeling algorithm](https://github.com/kawatea/pruned-highway-labeling), but the source code for those is already integrated within the project since some minor modifications had to be introduced to update the project to the C++17 standard. Hence, the PHL implementation does not need to be built seperately.
