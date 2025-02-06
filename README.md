@@ -1,5 +1,5 @@
 ﻿# Trajectory Similarity Measures - Computation and Baselines in C++
-When delving into the research field of moving object databases and specifically trajectory data itself, one is sooner or later bound to come into contact with trajectory similarity measure. The study of those is particularly promising, because both the qualitative and efficiency-related aspects of such similarity measures are far from being easily analyzable.
+When delving into the research field of moving object databases and specifically trajectory data itself, one is sooner or later bound to come into contact with trajectory similarity measures. The study of those is particularly promising, because both the qualitative and efficiency-related aspects of such similarity measures are far from being easily analyzable.
 
 ## About
 This project implements the computation of classic similarity measures (i.e. Fréchet, discrete Fréchet, Hausdorff, DTW, LCSS, EDR, ERP) in C++ for both Euclidean and Road Network trajectories. To my knowledge, a library combining all of these measures, has not yet been open sourced which is why I decided to publish my implementation. Originally, this project was part of my bachelor's thesis "A Framework and Optimizations for Trajectory Similarity Predicates" at the [University of Constance](https://www.uni-konstanz.de/en/). Hence, this repository also contains some experimental and benchmarking-related code.
@@ -36,9 +36,17 @@ Abstract classes support the evaluation/benchmarking of similarity measures on a
 
 ## Pointers to Literature
 Since this I am publishing this repo to assist people who are working or wanting to work with trajectory similarity measures, I also felt inclined to include this essential list of publications that revolves around the classic similarity measures:
-* 
-* 
-*
+* [Fréchet Distance](https://doi.org/10.1142/S0218195995000064)
+* [Discrete Fréchet Distance](https://www.researchgate.net/profile/Thomas-Eiter-2/publication/228723178_Computing_Discrete_Frechet_Distance/links/5714d93908aebda86c0d1a7b/Computing-Discrete-Frechet-Distance.pdf)
+* [Hausdorff Distance](https://doi.org/10.1109/34.232073)
+* [Dynamic Time Warping Distance](https://dl.acm.org/doi/10.5555/3000850.3000887)
+* [Edit Distance on Real Sequences](https://doi.org/10.1145/1066157.1066213)
+* [Edit Distance with Real Penalty](https://doi.org/10.5555/1316689.1316758)
+* [Longest Common Subsequence](10.1109/ICDE.2002.994784)
+
+Additionally, also see:
+* [Adaption of the Fréchet Distance to Road Networks](https://doi.org/10.1007/978-3-642-24983-9_7)
+* [For a more efficient computation of the Hausdorff Distance](https://doi.org/10.1109/TPAMI.2015.2408351)
 
 ## Authors and Acknowledgement
 This project was written in its entirety by Max Galetskiy with the exception of the functions provided by Boost, GEOS or the PHL implementation as explained in the "Dependencies" section of this documentation.
