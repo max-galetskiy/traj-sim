@@ -51,4 +51,4 @@ Additionally, also see:
 ## Authors and Acknowledgement
 This project was written in its entirety by Max Galetskiy with the exception of the functions provided by Boost, GEOS or the PHL implementation as explained in the "Dependencies" section of this documentation.
 
-The Bachelor's thesis from which this project originated from, was supervised by [Theodoros Chondrogiannis](https://dbis.uni-konstanz.de/people/people/researchers/chondrogiannis/) and [Johann Bornholdt](https://dbis.uni-konstanz.de/people/people/researchers/bornholdt/) of the [Database and Information Systems group](https://dbis.uni-konstanz.de/) under [Michael Grossniklaus](https://dbis.uni-konstanz.de/people/people/grossniklaus/)).
+The Bachelor's thesis from which this project originated from, was supervised by [Theodoros Chondrogiannis](https://dbis.uni-konstanz.de/people/people/researchers/chondrogiannis/) and [Johann Bornholdt](https://dbis.uni-konstanz.de/people/people/researchers/bornholdt/) of the [Database and Information Systems group](https://dbis.uni-konstanz.de/) under [Michael Grossniklaus](https://dbis.uni-konstanz.de/people/people/grossniklaus/).
